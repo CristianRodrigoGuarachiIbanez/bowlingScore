@@ -1,5 +1,5 @@
 
-Bowling Score
+# Bowling Score
 
 The calculation of the bowling score is executed by the module bowlingGame, which has two separate moduls to calculate explicitly 
 the game results as well as the total game scores as specified [hier ](https://www.liveabout.com/bowling-scoring-420895)
