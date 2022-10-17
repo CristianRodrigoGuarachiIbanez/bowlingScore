@@ -10,17 +10,34 @@ the ScoreTable modul shows graphically the results of every frame and the reache
 the throws should be done by clicking on the button on the GUI.
 
 ## dependencies
-In order to run the bowling game, the pytq5 library should be installed. The easy way is directly to install this bibliotec using pip
-        python3.? -m pip install Pytq5
-or, just install the requirements on the file requirements.txt
-        python3.? -m pip install -r .requirements.txt
-it is also possible to install the bowlingScore modul as a library using the toml file 
-        python3.? -m pip install -e .
+In order to run the bowling game, the pytq5 library should be installed. The easy way is directly to install this bibliotec using pip:
+            
+          python3.? -m pip install Pytq5
+
+or, just install the requirements on the file requirements.txt:
+
+         python3.? -m pip install -r .requirements.txt
+
+it is also possible to install the bowlingScore modul as a library using the .toml file:
+
+          python3.? -m pip install -e .
+
 using the last way will enable to test or run the bowlingScore modul using the already written test files in the 
 BowlingScore/src/tests directory 
 
-## set up
+## Run
 
-after the dependencies have been installed, it could be possible to run the file testBowlingGame.py which runs the bowlingScore modul and test the calculation of the results and scores of the game.
-the file test_bowlingScoreTable.py runs the GUI Score Table to start gaming!
+After the dependencies have been installed, it is possible to navigate to the directory ./src/bowlingScore/ and there run the file scoreTable:
+            
+        python3.? scoreTable.py 
+
+it could also be possible to run the file testBowlingGame.py in directory ./tests/ , which runs the bowlingScore modul 
+and test the calculation of the results and scores of the game:
+    
+        python3.? testBowlingGame.py
+
+In this directory, the file test_bowlingScoreTable.py runs the GUI Score Table to start gaming!
+
+        python3.? test_bowlingScoreTable.py
+
 

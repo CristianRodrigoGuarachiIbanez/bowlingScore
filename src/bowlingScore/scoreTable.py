@@ -55,7 +55,7 @@ class ScoreWindow(QMainWindow):
                 sys.exit()
         except StopIteration:
             sys.exit()
-        print("col ->", col, "score ->", score, "result ->", result)
+        # print("col ->", col, "score ->", score, "result ->", result)
         self.tableWidget.setItem(0, col, QTableWidgetItem(result))
         self.tableWidget.setItem(1, col, QTableWidgetItem(str(score)))
 
@@ -119,7 +119,7 @@ class GAME:
             flag = True
             pins = self._throws.throw(1, 10)
             self._game.roll(pins, n)
-            print("index {}  flag {} , cont {} stroke pins {}, throws {}".format(n, flag, cont, pins, self._game.getRolls()))
+            # print("index {}  flag {} , cont {} stroke pins {}, throws {}".format(n, flag, cont, pins, self._game.getRolls()))
             if ((n % 2) != 0) and pins == 10:
                 N -= 1
                 result = "/"
@@ -151,10 +151,5 @@ class GAME:
 
 
 if __name__ == '__main__':
-    # app = QApplication(sys.argv)
-
-    # ex = ScoreWindow()
-    # ex.show()
-    # sys.exit(app.exec_())
 
     game = GAME()
