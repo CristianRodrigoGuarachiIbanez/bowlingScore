@@ -1,7 +1,0 @@
-.coverage
-.gitignore
-.mypy_cache
-.tox
-.idea
-src/bowlingScore.egg-info
-
